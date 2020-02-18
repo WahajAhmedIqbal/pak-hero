@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Heroes Of Pakistan</title>
+</head>
+<body>
+    <!-- container -->
+    <div id="container">
+        <div id="header">
+            <h1>this site is a tribute to all the heroes who sacrifice for pakistan</h1>
+        </div>
+        <!-- ------------------------------body -->
+        <div class="body">
+            <img src="images/1.jpg">
+            <img src="images/2.jpg">
+            <img src="images/3.jpg">
+        </div>
+        
+
+    </div>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function(){
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos){
+                document.getElementById("header").style.top = "0";}
+            else{
+                document.getElementById("header").style.top = "-50px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
+        
+    </script>
+</body>
+</html>
